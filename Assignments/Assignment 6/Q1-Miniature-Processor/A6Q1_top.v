@@ -14,27 +14,35 @@ module top;
         end
         else if (inst_num == 1) begin
             cmd=3'b011; read1=1; write=2; data=-9;
+            $display("\n");
         end
         else if (inst_num == 2) begin 
             cmd=3'b100; read1=1; read2=2; write=3; data=65;
+            $display("\n");
         end
         else if (inst_num == 3) begin 
             cmd=3'b010; read1=2; read2=3;
+            $display("\n");
         end
         else if (inst_num == 4) begin 
             cmd=3'b111; read1=3; write=5; data=3;
+            $display("\n");
         end
         else if (inst_num == 5) begin 
             cmd=3'b101; read1=1; read2=2; write=4;
+            $display("\n");
         end
         else if (inst_num == 6) begin 
             cmd=3'b111; read1=4; write=4; data=9;
+            $display("\n");
         end
         else if (inst_num == 7) begin 
             cmd=3'b110; read1=5; read2=4; write=6;
+            $display("\n");
         end
         else if (inst_num == 8) begin
             cmd=3'b001; read1=6;
+            $display("\n");
         end
         else begin
           $display("Program completed.");
